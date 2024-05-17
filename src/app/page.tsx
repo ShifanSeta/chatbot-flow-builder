@@ -42,10 +42,7 @@ export default function Home() {
       setEdges(EdgeData)
     }else{
       setEdges(initialEdges)
-    }
-    // setNodes(NodeData);
-    console.log("meow", NodeData, EdgeData);
-    
+    }    
 
   },[])
   //onClick features for drag button and input change
@@ -54,7 +51,6 @@ export default function Home() {
     setNodeName(node.data.label);
     setIsSelectable(true);
   };
-  console.log(nodes);
   
 
   const nodeTypes = useMemo(
@@ -115,7 +111,6 @@ export default function Home() {
       };
 
       setNodes((nds) => nds.concat(newNode));
-      console.log("node created");
     },
 
     [reactFlowInstance]
@@ -253,7 +248,6 @@ const checkNodesWithEmptyTargets = () => {
     <main className="lg:hidden md:hidden flex justify-center items-center text-center h-screen card">
             <h1 className="text-xl">In Able to use the service desktop view is required</h1>
     </main>
-
     </>
     
   );
