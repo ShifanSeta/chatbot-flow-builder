@@ -250,7 +250,7 @@ const checkNodesWithEmptyTargets = () => {
         </div>
       </section>
     </main>
-    <main className="lg-hidden md-hidden flex justify-center items-center text-center h-screen card">
+    <main className="lg:hidden md:hidden flex justify-center items-center text-center h-screen card">
             <h1 className="text-xl">In Able to use the service desktop view is required</h1>
     </main>
 
